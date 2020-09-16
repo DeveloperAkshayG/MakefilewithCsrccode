@@ -1,0 +1,9 @@
+addpointer :addpointer.o
+	    gcc addpointer.o -o addpointer
+
+addpointer.o :addpointer.c
+	      gcc -c addpointer.c
+
+.PHONY:clean
+clean:
+	      rm -rf *.o addpointer

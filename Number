@@ -1,0 +1,5 @@
+number  :number.o
+	 gcc number.o -o number
+
+number.o :number.c
+	  gcc -c number.c
